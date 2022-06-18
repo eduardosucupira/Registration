@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-image: linear-gradient(to right, rgb(0, 147, 220),rgb(17, 54, 71));
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 25%;
+    color: white;
+}
+
+fieldset{
+    border: 3px solid rgb(20, 147, 220, 1);
+}
+
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputBox{
+    position: relative;
+}
+
+
+.User{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.Label{
+    position: absolute;
+    pointer-events: none;
+    top: 0px;
+    left: 0px;
+    transition: .5s;
+}
+
+.User:focus ~ .Label,
+.User:valid ~ .Label{
+    top: -20px;
+    font-size: 15px;
+    color: dodgerblue;
+}
+
+.data{
+    border-radius: 10px;
+    background-color: white;
+    outline: none;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#subimit{
+    background-image: linear-gradient(to right, rgb(0, 92, 197),rgb(90, 20, 220));
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#subimit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172),rgb(80, 19, 195));
+}
